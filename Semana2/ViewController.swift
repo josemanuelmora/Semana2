@@ -40,11 +40,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //Funcion para desaparecer el teclado
     @IBAction func textFieldDone(sender: UITextField)
     {
-        sender.resignFirstResponder()  //Esta linea oculta el teclado
-        
         if !nombre.text!.isEmpty {
             Iniciar.enabled = true
         }
+        
+        sender.resignFirstResponder()  //Esta linea oculta el teclado
     }
     
     //Funcion que quita el teclado con clik en la interfaz
